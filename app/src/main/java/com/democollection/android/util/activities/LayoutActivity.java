@@ -34,9 +34,10 @@ public class LayoutActivity extends AppCompatActivity {
                 if(position == 0){
                     Intent intent = new Intent(LayoutActivity.this, LinearLayoutActivity.class);
                     startActivity(intent);
-
-
                 }else if(position ==1){
+                    Intent intent = new Intent(LayoutActivity.this, RelativeActivity.class);
+                    startActivity(intent);
+                }else if(position==2){
 
                 }
             }
@@ -46,6 +47,8 @@ public class LayoutActivity extends AppCompatActivity {
     private void initLayoutName() {
         IntentItem LinearLayoutDemo = new IntentItem("线性布局");
         layoutItemList.add(LinearLayoutDemo);
+        IntentItem RelateiveLayout  = new IntentItem("相对布局");
+        layoutItemList.add(RelateiveLayout);
         IntentItem FragmentDemo = new IntentItem("帧布局");
         layoutItemList.add(FragmentDemo);
     }

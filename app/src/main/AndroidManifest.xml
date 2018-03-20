@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".util.activities.LayoutActivity" />
-        <activity android:name=".util.activities.LinearLayoutActivity"></activity>
+        <activity android:name=".util.activities.LinearLayoutActivity" />
+        <activity android:name=".util.activities.RelativeActivity" />
+        <activity android:name=".util.activities.FragmentActivity"></activity>
     </application>
 
 </manifest>
